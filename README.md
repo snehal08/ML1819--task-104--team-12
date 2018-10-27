@@ -9,6 +9,10 @@ Experiment 1:
 Dataset - Contains data regarding wine quality, depending on various attributes. It is included as "winequality.csv" here.
 (Source: https://www.kaggle.com/aleixdorca/wine-quality )
 
-Aim - To predict the quality of wine from the given data
+Aim - To predict the quality of wine from the given data, and to observe how prediction varies with increasing amount of data
+
+Algorithms Used - a) Gaussian Naive Bayes
+                  b) Decision Tree Classifier 
+                  c) Random Forest Classifier
 
 Evaluation Metrics - Accuracy and F1 Score
