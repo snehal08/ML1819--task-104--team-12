@@ -2,6 +2,7 @@
 CS7CS4 Group Project : Project 104 (Data Amount)
 
 Research Question:  How much data do you need to train machine learning algorithms effectively? 
+
 The objective of this project is to find out how the performance of machine learning algorithms changes when the amount of data for training changes.
 
 Experiment 1:
