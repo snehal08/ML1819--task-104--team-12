@@ -23,13 +23,13 @@ data.head()
 # In[2]:
 
 
-def a(subdata):
+def model(subdata):
     
     b = ['Product_Category_2','Product_Category_3'] 
     for i in b:
         exec("data.%s.fillna(data.%s.value_counts().idxmax(), inplace=True)" %(i,i))
         
-    X = data.drop(["Purchase"], axis=1)
+    X = data.drop(["Purchase","User_ID","Product_ID"], axis=1)
     LE = LabelEncoder()
     X = X.apply(LE.fit_transform)#Here we applied encoder onto data
     X.Gender = pd.to_numeric(X.Gender)
@@ -54,7 +54,7 @@ def a(subdata):
     
     principalDf = pd.DataFrame(data = principalComponents, columns = ["component 1", "component 2", "component 3", "component 4"])
     
-    kf = KFold(20)
+    kf = KFold(10)
     #Provides train/test indices to split data in train/test sets. Split dataset into k consecutive folds (without shuffling by default).
     #Each fold is then used once as a validation while the k - 1 remaining folds form the training set.
     
@@ -81,12 +81,12 @@ df_2 = data[:int(3 * ((len(data.index) / 5)/10))]  # 20k (approx)
 df_3 = data[:int(10 * ((len(data.index) / 5)/10))]  # 30k (approx)
 df_4 = data[:int(16 * ((len(data.index) / 5)/10))]  # 40k (approx)
 df_5 = data  # 50k (approx)
-setlist=[df_1,df_2,df_3,df_4,df_5]
+range_list=[df_1,df_2,df_3,df_4,df_5]
 
 
 # In[4]:
 
 
-for x in setlist:
-     a(x)
+for x in range_list:
+     model(x)
 
