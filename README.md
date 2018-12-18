@@ -1,9 +1,11 @@
-# Machine-Learning
+# ML1819: Project 104 (Data Amount)
 CS7CS4 Group Project : Project 104 (Data Amount)
 
 Research Question:  How much data do you need to train machine learning algorithms effectively? 
 
 The objective of this project is to find out how the performance of machine learning algorithms changes when the amount of data for training changes.
+
+********************************************RESEARCH 1*************************************************************************
 
 Experiment 1: Wine Quality Prediction (Branch: research_1)
 
@@ -48,3 +50,5 @@ Evaluation Metrics - a) Accuracy
                      b) Standard Deviation
 
                   
+*********************************************RESEARCH 2************************************************************************
+Dataset Used: Black Friday (https://www.kaggle.com/mehdidag/black-friday)
